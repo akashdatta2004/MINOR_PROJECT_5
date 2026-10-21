@@ -16,7 +16,6 @@ Group mall customers by annual income and spending score, explore how age relate
 - `Mall_Customer_Raw_Dataset.csv`
 - `customer_segments_output.csv`
 - `segment_profile.csv`
-- `Customer_Segmentation_Presentation.pptx` 
 - `requirements.txt` 
 
 ## Run the project
