@@ -13,7 +13,9 @@ Group mall customers by annual income and spending score, explore how age relate
 ## Files
 - `Customer_Segmentation_KMeans.ipynb` 
 - `Project_Report.md` 
-- `Presentation_Script.md` 
+- `Mall_Customer_Raw_Dataset.csv`
+- `customer_segments_output.csv`
+- `segment_profile.csv`
 - `Customer_Segmentation_Presentation.pptx` 
 - `requirements.txt` 
 
