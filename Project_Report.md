@@ -35,12 +35,12 @@ Each chart should be accompanied by a brief observation based on the actual outp
 K-Means assigns each customer to the nearest cluster centroid. Candidate values of k are compared using inertia (within-cluster sum of squared distances) and silhouette score. Silhouette values range from -1 to +1; higher values generally indicate better-separated clusters, while values near zero indicate overlap. The selected k is a baseline chosen from the tested silhouette scores and should also be checked against the elbow plot and interpretability.
 
 ## 7. Evaluation and Insights
-Baseline k selected by highest silhouette score: 5
-Cluster sizes and profiles: 81, 39, 22, 35 and 23 customers
-Final silhouette score: 0.555
-Final inertia: 65.568
-Evaluation method: Elbow method and silhouette score
-Accuracy: Not applicable because the dataset has no ground-truth cluster labels.
+- Baseline k selected by highest silhouette score: 5
+- Cluster sizes and profiles: 81, 39, 22, 35 and 23 customers
+- Final silhouette score: 0.555
+- Final inertia: 65.568
+- Evaluation method: Elbow method and silhouette score
+- Accuracy: Not applicable because the dataset has no ground-truth cluster labels.
 
 ## 8. Expected business use
 After reviewing the calculated cluster profiles, the mall could test different offers for high-income/high-spending, high-income/low-spending, or lower-income/high-spending groups where those patterns actually appear. The suggestions should be treated as experiments and evaluated using real campaign outcomes.
