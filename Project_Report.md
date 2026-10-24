@@ -31,18 +31,24 @@ The notebook includes:
 - Segment-size bar chart
 Each chart should be accompanied by a brief observation based on the actual output.
 
-## 6. Method and evaluation
+## 6. Method
 K-Means assigns each customer to the nearest cluster centroid. Candidate values of k are compared using inertia (within-cluster sum of squared distances) and silhouette score. Silhouette values range from -1 to +1; higher values generally indicate better-separated clusters, while values near zero indicate overlap. The selected k is a baseline chosen from the tested silhouette scores and should also be checked against the elbow plot and interpretability.
 
-There is no ground-truth segment label, so classification accuracy, precision, recall, and F1-score are not appropriate. Report the actual chosen k, silhouette score, cluster sizes, and mean/median profiles after executing the notebook. These values are intentionally not fabricated in this report.
+## 7. Evaluation and Insights
+Baseline k selected by highest silhouette score: 5
+Cluster sizes and profiles: 81, 39, 22, 35 and 23 customers
+Final silhouette score: 0.555
+Final inertia: 65.568
+Evaluation method: Elbow method and silhouette score
+Accuracy: Not applicable because the dataset has no ground-truth cluster labels.
 
-## 7. Expected business use
+## 8. Expected business use
 After reviewing the calculated cluster profiles, the mall could test different offers for high-income/high-spending, high-income/low-spending, or lower-income/high-spending groups where those patterns actually appear. The suggestions should be treated as experiments and evaluated using real campaign outcomes.
 
-## 8. Limitations
+## 9. Limitations
 The dataset is small and educational; it may not represent the broader customer population. Spending score is not necessarily actual revenue. There is no transaction history, customer lifetime value, product preference, or time dimension. K-Means favours compact clusters and results depend on feature selection, scaling, and k. Clusters are descriptive and do not establish causality.
 
-## 9. Conclusion
+## 10. Conclusion
 The project builds an end-to-end unsupervised-learning workflow from data cleaning through cluster evaluation and interpretation. The final conclusion should be completed after running the notebook on the Kaggle CSV and inserting the measured silhouette score, chosen cluster count, cluster sizes, and the strongest segment differences. The most useful outcome is a set of understandable customer groups and testable marketing hypotheses—not a claim that the model predicts future spending.
 
 ## References
